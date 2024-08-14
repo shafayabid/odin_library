@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
+    --margin: 16px;
     --padding: 16px;
     --padding-large: 32px;
 }
@@ -46,6 +47,8 @@ body {
     background-color: #eab308;
     padding: var(--padding-large);
     align-items: flex-start;
+    flex-wrap: wrap;
+    gap: var(--margin);
 }
 
 .card {
@@ -59,4 +62,17 @@ body {
 
 .card > div {
     padding: var(--padding);
+}
+
+.card > div:nth-child(4) {
+    background-color: #ca8a04;
+    border-radius: 10px;
+}
+
+.card > button {
+    margin: var(--margin);
+    padding: var(--padding);
+    color: white;
+    background-color: red;
+    border-radius: 10px;
 }

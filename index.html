@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Odin Library</title>
 </head>
 
 <body>
@@ -19,10 +19,39 @@
                 <div>Book Name</div>
                 <div>Book Author</div>
                 <div>Book Pages</div>
-                <div>Is Read?</div>
+                <div>Read</div>
+                <button class="delete-book">Delete</button>
             </div>
         </div>
     </div>
+    <dialog>
+        <form>
+            <div>
+                <label for="book-name">Book Name:</label>
+                <input type="text" id="book-name" name="book-name">
+            </div>
+            <div>
+                <label for="author-name">Author name:</label>
+                <input type="text" id="author-name" name="author-name">
+            </div>
+            <div>
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" name="pages">
+            </div>
+            <div>
+                <input type="radio" id="isRead" name="read" value="Is Read">
+                <label for="isRead">Is Read</label>
+            </div>
+            <div>
+                <input type="radio" id="isNotRead" name="read" value="Is Not Read">
+                <label for="isNotRead">Is Not Read</label>
+            </div>
+        </form>
+        <div>
+            <button class="add-book-dialog">Add</button>
+            <button class="cancel-dialog">Cancel</button>
+        </div>
+    </dialog>
     <script src="script.js"></script>
 </body>
 
